@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyA8F-c0jtRewZ84W5iNbRJuZfqh6rgxUFOveJ4n46OPOZGmnOhP5RIo3_vkYdFaOj4pz9vPNj-wr8wUoeRVM_eVUeoapwhYu3SXstwWidwJub1bL9MojN7FzwOUt5elGtSKGbbsZ4LTFWKXSfCwJC7kMJfx5IEZAJ_j0ukmnOZffuuoVWU9_itEWXywE/s1000/SkanHawk-logo-azul.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.404); 
+    z-index: 1; 
+}
+
+.container > * {
+    position: relative;
+    z-index: 2; /* mantener el contenido visible por encima de la capa */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* espacio entre las columnas */
+}
+
+.centered-image {
+    justify-content: center; /* centrar la fila */
+    margin-bottom: 5px; /* espacio debajo de la primera imagen */
+}
+
+.column {
+    flex: 1; /* las columnas ocuparán el mismo espacio */
+    padding: 10px;
+    text-align: center;
+}
+
+.image {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del ancho de la columna */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 500px; /* Define un tamaño máximo opcional para las imágenes */
+    border: 1px solid #ffffff00; /* Borde opcional para la imagen */
+    padding: 5px; /* Espacio alrededor de la imagen */
+    box-sizing: border-box;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

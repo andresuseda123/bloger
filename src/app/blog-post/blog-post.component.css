@@ -1,0 +1,6 @@
+.post-content {
+  text-align: justify;      /* me Justifica el conteniddo */
+  background-color: #ffffff; /* fondo */
+  color: #000000;           /* texto */
+  font-family: 'Poppins', sans-serif;  /* letra */
+}

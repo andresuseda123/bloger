@@ -1,0 +1,67 @@
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+  color: #2f00ff; /* Cambia el color del texto al pasar el mouse */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9); /* Incrementa el efecto de sombra */
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-align: justify;
+  margin-top: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h2:hover {
+  color: #2f00ff; /* Cambia el color del texto al pasar el mouse */
+  transform: scale(1.04); /* Hace que el título aumente ligeramente su tamaño */
+}
+
+img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+img:hover {
+  transform: scale(1.1); /* Agranda la imagen un poco al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Incrementa la sombra */
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  background-color: #3a112c;
+  border-radius: 20px;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+}
+
+div {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+img {
+  margin-left: 20px;
+}

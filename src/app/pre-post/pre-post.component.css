@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.5s ease;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.post-preview {
+    background-color: #3a112c;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgb(255, 255, 255);
+    padding: 9px;
+    margin-bottom: 0px;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* transición suave */
+}
+.post-preview:hover {
+    transform: translateY(-10px); /* mover la tarjeta hacia arriba */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* aumenta la sombra */
+}
+.post-preview h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease; /* transición suave para el color */
+}
+.post-preview h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+}
+.post-meta {
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 8px;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* transición suave */
+}
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05); /* aumenta ligeramente el tamaño del botón */
+}
+.d-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
